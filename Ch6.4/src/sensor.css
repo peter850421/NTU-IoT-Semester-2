@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i');
+
+html, body, div, h1, h2, h3, p, img, nav, footer { margin:0; padding: 0; }
+
+body { font-family: Ubuntu; font-weight: 300;}
+
+h1, h2, h3 { font-weight: 400;} 
+
+#product { width: 60% ; }
+
+/* Tablet and Desktop version */
+@media screen and (min-width : 640px) {
+#main {
+    width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #8cdbd9;
+    box-shadow: 4px 6px 21px -6px rgba(0,0,0,0.75);
+}
+
+h1 { margin: 20px 0 ; text-align: center; color: #2d3e4e;}
+
+#pictureBox { margin-bottom: 40px; text-align: center;}
+#row4 { display: flex; margin-bottom: 40px; text-align: center; margin: 0 auto;}
+#row4 img {margin: 0 auto; text-align: center; border-radius: 50%;margin-top: 25px;}
+#rowdown img {margin: 0 auto; text-align: center; margin-top: 25px;border-radius: 50%;}
+#light, #soil, #temperature, #humidity {  width : 180px; height: 180px; text-align: center; margin-top: 30px;}
+#w1 {width:150px ; height:150px ;border-radius: 50%; background-color:rgba(249, 246, 207);text-align: center;margin: 0 auto;margin-top: 30px;}
+#w2 {width:150px ; height:150px ;border-radius: 50%; background-color: rgba(238, 220, 228);text-align: center;margin: 0 auto;margin-top: 30px;}
+#w3 {width:150px ; height:150px ;border-radius: 50%; background-color: rgba(184, 175, 202);text-align: center;margin: 0 auto;margin-top: 30px;}
+#w4 {width:150px ; height:150px ;border-radius: 50%; background-color: #c3e2dd; margin: 0 auto;margin-top: 30px;}
+#w5 {display: flex; width : 250px; height : 100px; text-align: center; background-color: #6eaeda; color:black}
+#rowdown { width : 250px; height : 100px; text-align: center; background-color: #6eaeda; padding: 30px;margin: 0 auto;margin-top: 60px;}
+
+footer {  padding-top: 60px; text-align: center;}
+footer a { margin: 30px; color: #e8ece8; text-decoration: none;}
+}
+
+/* Mobile Version */
+@media screen and ( max-width : 639px) {
+    #main { background: #8cdbd9;}
+
+    nav {
+        text-align: right;
+        padding: 10px;
+        background: #EEE;
+        border:1px solid #BBB;
+        margin: 2px;
+    }
+
+    h1 { text-align: center; margin: 15px 0; font-size: 5vw; color: #2d3e4e;}
+
+    #pictureBox { margin-bottom: 40px; text-align: center;}
+    
+    #row4 { padding: 0 10px;}
+    #row4 div {
+        text-align: center;
+        border-bottom: 4px double #bbb;        
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #w1 {width:150px ; height:150px ;border-radius: 50%; background-color:rgba(249, 246, 207); text-align: center;}
+    #w2 {width:150px ; height:150px ;border-radius: 50%; background-color: rgba(238, 220, 228); text-align: center;}
+    #w3 {width:150px ; height:150px ;border-radius: 50%; background-color: rgba(184, 175, 202); text-align: center;}
+    #w4 {width:150px ; height:150px ;border-radius: 50%; background-color: #c3e2dd; text-align: center;}
+    #w5 {display: flex; width : 250px; height : 100px; text-align: center; background-color: #6eaeda; color:black}
+
+    footer { text-align: center; padding: 10%; background: #666;}
+    footer a { margin: 3%; color: #aaa; text-decoration: none;}
+    #rowdown{
+        text-align: center;
+        border-bottom: 4px double #bbb;
+        padding: 20px 0;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width : 250px; height : 100px; text-align: center; background-color: #6eaeda;
+    }
+    #row4 img {margin: 0 auto; text-align: center; border-radius: 50%;margin-top: 25px;}
+    #rowdown img {margin: 0 auto; text-align: center; margin-top: 25px;}
+}
